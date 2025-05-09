@@ -1,0 +1,195 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #2a5298, #1e3c72);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 15px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Button Styles */
+.btn {
+    background: #ff9800;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+    border: none;
+    display: inline-block;
+}
+
+.btn:hover {
+    background: #e68900;
+}
+
+.logout-btn {
+    background: crimson;
+}
+
+.logout-btn:hover {
+    background: darkred;
+}
+
+/* Login & Register Page Styles */
+.auth-container {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.auth-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 350px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    font-size: 16px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border: 2px solid #6a11cb;
+}
+
+/* Upload Page */
+.upload-container {
+    text-align: center;
+    margin-top: 80px;
+    width: 100%;
+}
+
+.upload-box {
+    width: 60%;
+    max-width: 400px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    border: 2px dashed #fff;
+    transition: 0.3s;
+}
+
+.upload-box:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.preview-container {
+    margin-top: 20px;
+}
+
+.preview-container img {
+    width: 200px;
+    border-radius: 10px;
+    border: 2px solid white;
+}
+
+.upload-btn {
+    margin-top: 15px;
+    background: #4caf50;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.upload-btn:disabled {
+    background: gray;
+    cursor: not-allowed;
+}
+
+.upload-btn:hover:not(:disabled) {
+    background: #45a049;
+}
+
+/* Image Feed */
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.image-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.image-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}

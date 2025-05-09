@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Image - InstaClone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>📸 InstaClone</h1>
+        <div class="nav-links">
+            <a href="index.html" class="btn">🏠 Home</a>
+            <a href="#" id="logout" class="btn logout-btn">🚪 Logout</a>
+        </div>
+    </div>
+
+    <!-- Upload Section -->
+    <div class="container">
+        <h2>📤 Upload an Image</h2>
+        
+        <!-- Drag and Drop Upload Box -->
+        <div id="uploadBox" class="upload-box">
+            <p>Drag & drop an image here or</p>
+            <input type="file" id="imageFile" accept="image/*" hidden>
+            <button id="selectFile" class="btn">Choose File</button>
+        </div>
+
+        <!-- Image Preview -->
+        <div id="previewContainer" class="preview-container" style="display: none;">
+            <img id="previewImage" src="" alt="Preview">
+            <p id="fileName"></p>
+        </div>
+
+        <!-- Upload Button -->
+        <button id="uploadButton" class="upload-btn" disabled>🚀 Upload</button>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
